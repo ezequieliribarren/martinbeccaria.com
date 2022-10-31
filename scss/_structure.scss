@@ -1,0 +1,58 @@
+/* Reset */
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+}
+// Estructura
+#cont {
+    display: grid;
+    grid-template-areas:
+        "navs"
+        "headers"
+        "main"
+        "foot"
+    ;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 8rem 52rem auto 6rem;
+}
+
+.navs {
+    grid-area: navs;
+}
+
+.headers {
+    grid-area: headers;
+}
+
+main {
+    grid-area: main;
+    background-color: rgba(66, 64, 64, 0.91);
+}
+
+.foot {
+    grid-area: foot;
+    background-color:  rgb(29, 29, 29);
+
+}
+
+h1{
+  font-family: 'Vast Shadow', ;
+font-size: 4rem;
+color: white;
+}
+
+h2{
+  font-family: 'Vast Shadow', ;
+  color: white;
+}

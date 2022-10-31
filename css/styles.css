@@ -1,0 +1,182 @@
+/* Reset */
+/* line 2, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+/* line 7, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 13, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
+body {
+  min-height: 100%;
+}
+
+/* line 17, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
+#cont {
+  display: grid;
+  grid-template-areas: "navs" "headers" "main" "foot";
+  grid-template-columns: 100%;
+  grid-template-rows: 8rem 52rem auto 6rem;
+}
+
+/* line 30, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
+.navs {
+  grid-area: navs;
+}
+
+/* line 34, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
+.headers {
+  grid-area: headers;
+}
+
+/* line 38, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
+main {
+  grid-area: main;
+  background-color: rgba(66, 64, 64, 0.91);
+}
+
+/* line 43, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
+.foot {
+  grid-area: foot;
+  background-color: #1d1d1d;
+}
+
+/* line 49, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
+h1 {
+  font-family: "Vast Shadow";
+  font-size: 4rem;
+  color: white;
+}
+
+/* line 55, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
+h2 {
+  font-family: "Vast Shadow";
+  color: white;
+}
+
+/* line 1, ../../../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
+.navbar {
+  height: 8rem;
+  position: fixed;
+  width: 100%;
+  border: solid 0.5rem #393a39;
+  box-shadow: 0 3px px #393a39;
+  z-index: 1;
+}
+
+/* line 9, ../../../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
+.navbar .logo {
+  width: 6.5rem;
+}
+
+/* line 13, ../../../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
+.navbar li {
+  margin: 1.7rem;
+  height: 4rem;
+}
+
+/* line 18, ../../../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
+.navbar li :hover {
+  border-bottom: solid #29bc29;
+}
+
+/* line 23, ../../../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
+.navbar a {
+  color: white;
+  font-size: 1.7rem;
+}
+
+/* line 30, ../../../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
+.dropdown-menu {
+  background-color: #1f1f1f;
+}
+
+/* line 2, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+.headers {
+  --opacidad-negro: 0.7;
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(../img/backgroundHeader.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 11, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+.headers .titPrinc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 15, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+.headers .titPrinc h1 {
+  margin-top: 2.2rem;
+}
+
+/* line 23, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+.boxHeader {
+  margin-top: 6rem;
+}
+
+/* line 27, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+.box {
+  height: 5rem;
+  width: 28rem;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px #4c9748;
+  background-color: rgba(63, 59, 59, 0.437);
+}
+
+/* line 36, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+.box a {
+  text-decoration: none;
+}
+
+/* line 39, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+.box h2 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+/* line 43, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+.box h2:hover {
+  border-bottom: solid  green 0.5rem;
+}
+
+/* line 1, ../../../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi {
+  display: flex;
+  justify-content: center;
+  background-color: #1d1b1b;
+}
+
+/* line 6, ../../../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 14, ../../../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+.descrip .box {
+  width: 35rem;
+  height: 15rem;
+}
+
+/* line 18, ../../../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+.descrip .box p {
+  font-size: medium;
+  text-align: center;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
