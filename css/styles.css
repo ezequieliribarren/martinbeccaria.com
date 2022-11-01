@@ -56,8 +56,17 @@ h1 {
 
 /* line 55, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
 h2 {
-  font-family: "Vast Shadow";
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 2.5rem;
   color: white;
+  text-align: center;
+  font-style: oblique;
+}
+
+/* line 63, ../../../PAGINAS/martinbeccaria.com/scss/_structure.scss */
+p {
+  font-family: 'Ramabhadra', sans-serif;
+  font-style: oblique;
 }
 
 /* line 1, ../../../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
@@ -72,7 +81,7 @@ h2 {
 
 /* line 9, ../../../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
 .navbar .logo {
-  width: 6.5rem;
+  width: 8rem;
 }
 
 /* line 13, ../../../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
@@ -97,7 +106,7 @@ h2 {
   background-color: #1f1f1f;
 }
 
-/* line 2, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+/* line 1, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
 .headers {
   --opacidad-negro: 0.7;
   background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(../img/backgroundHeader.jpg);
@@ -108,7 +117,7 @@ h2 {
   justify-content: space-around;
 }
 
-/* line 11, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+/* line 10, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
 .headers .titPrinc {
   display: flex;
   flex-direction: column;
@@ -120,36 +129,30 @@ h2 {
   margin-top: 2.2rem;
 }
 
-/* line 23, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+/* line 21, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
 .boxHeader {
   margin-top: 6rem;
 }
 
-/* line 27, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+/* line 25, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
 .box {
   height: 5rem;
-  width: 28rem;
+  width: 27rem;
   padding: 1rem;
-  margin: 2rem;
+  margin: 2.3rem;
   border-radius: 14px;
   box-shadow: 0 3px 10px #4c9748;
-  background-color: rgba(63, 59, 59, 0.437);
+  background-color: rgba(37, 37, 37, 0.555);
 }
 
-/* line 36, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+/* line 34, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
 .box a {
   text-decoration: none;
 }
 
-/* line 39, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
-.box h2 {
-  font-size: 2.2rem;
-  text-align: center;
-}
-
-/* line 43, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
+/* line 38, ../../../PAGINAS/martinbeccaria.com/scss/_header.scss */
 .box h2:hover {
-  border-bottom: solid  green 0.5rem;
+  border-bottom: solid green 0.5rem;
 }
 
 /* line 1, ../../../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */

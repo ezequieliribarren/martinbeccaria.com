@@ -1,13 +1,13 @@
 .navbar {
     height: 8rem;
     position: fixed;
-    width: 100%;
+    width: $total;
     border: solid 0.5rem #393a39;
     box-shadow: 0 3px px #393a39;
     z-index: 1;
 
     .logo {
-        width: 6.5rem;
+        width: 8rem;
     }
 
     li {
