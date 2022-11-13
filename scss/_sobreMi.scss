@@ -1,24 +1,42 @@
 #sobreMi{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(29, 27, 27);
+    margin-top: 6rem;
+
 }
+
+
 .perfil{
  display: flex;
- flex-direction: column;
- align-items: center;   
+justify-content: center;
+align-items: center;
+margin-bottom: $a;
+
+
+.divImgPerf{
+    width: 25rem;
+    margin: $d;
+
+}
+ .imgPerf{
+    width: $total;
+    border-radius: 20rem;
+ }  
+
+ h2{
+    font-size: $d;
+ }
 }
 
-.descrip{
+.select{
+    display: flex;
+    justify-content: center;
 
-    .box{
-        width: 35rem;
-        height: 15rem;
 
-        p{
-            font-size: medium;
-            text-align: center;
-            color: white;
-        }
+}
+.despl1,.despl2,.despl3{
+    div{
+        margin: $b;
     }
 }
+
+
+

@@ -1,5 +1,5 @@
 .navbar {
-    height: 8rem;
+    height: 10rem;
     position: fixed;
     width: $total;
     border: solid 0.5rem #393a39;
@@ -11,8 +11,9 @@
     }
 
     li {
-        margin: 1.7rem;
-        height: 4rem;
+        margin-right: 1.7rem;
+        margin-left: 1.7rem;
+        height: 3.5rem;
 
 
         :hover {
@@ -22,7 +23,8 @@
 
     a {
         color: white;
-        font-size: 1.7rem;
+        font-size: 1.8rem;
+        font-family: 'Ramabhadra', sans-serif
 
     }
 }
