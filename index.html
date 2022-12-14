@@ -21,8 +21,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
 
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+
 
   <!-- Css -->
   <link rel="stylesheet" href="css/styles.css">
@@ -55,8 +57,8 @@
                 Servicios
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Preparación Física</a></li>
-                <li><a class="dropdown-item" href="#">Entrenamientos</a></li>
+                <li><a class="dropdown-item" href="#">Entrenamiento Deportivo</a></li>
+                <li><a class="dropdown-item" href="#">Entrenamiento General</a></li>
                 <li><a class="dropdown-item" href="#">Evaluaciones</a></li>
               </ul>
             </li>
@@ -93,37 +95,67 @@
   </header>
 
   <main class="main">
-    <div id="sobreMi">
-      <div class="perfil">
-        <div>
-          <h2>MARTIN</h2>
-          <h2>BECCARIA</h2>
+
+    <section id="sobreMi">
+      <div class="mainSobreMi">
+        <div class="imgMainSobreMi">
+          <img class="imgPerf" src="img/sobreMi/imgPerf.jpeg" alt="">
         </div>
-        <div>
-          <div class="divImgPerf">
-            <img class="imgPerf" src="./img/sobreMi/imgPerf.jpeg" alt="">
+        <div class="contSobreMi">
+          <div>
+            <h2 class="titSobreMi">Soy Martin Beccaria</h2>
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sunt quam? <br> Laboriosam fugiat,
+              laborum
+              vitae ullam illum deleniti consectetur sed! Rem omnis qui nulla consequuntur molestiae quam facere
+              praesentium incidunt.</p>
           </div>
         </div>
-
       </div>
 
-      <div class="select">
-        <div class="box" id="select1">
-          <h3>Formación</h3>
-        </div>
-        <div class="box" id="select2">
-          <h3>Habilidades</h3>
-        </div>
-        <div class="box" id="select3">
-          <h3>Experiencia </h3>
+      <div class="perfil">
+
+        <div class="cards">
+          <div class="card text-white bg-dark mb-3" style="max-height: 64rem;">
+            <h3 class="card-title">FORMACION</h3>
+            <div class="imgSobreMi">
+              <img src="img/sobreMi/card2.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <button class="botonCardF">▼</button>
+            </div>
+            <div class="contCardF"> </div>
+          </div>
+
+          <div class="card text-white bg-dark mb-3" style="max-height: 64rem;">
+            <h3 class="card-title">EXPERIENCIA</h3>
+            <div class="imgSobreMi">
+              <img src="img/sobreMi/card2.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <button class="botonCardE">▼</button>
+            </div>
+            <div class="contCardE"> </div>
+          </div>
+
+          <div class="card text-white bg-dark mb-3" style="max-height: 64rem;">
+            <h3 class="card-title">CUALIDADES</h3>
+            <div class="imgSobreMi">
+              <img src="img/sobreMi/card2.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <button class="botonCardC">▼</button>
+            </div>
+            <div class="contCardC"> </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="despl1"></div>
-      <div class="despl2"></div>
-      <div class="despl3"></div>
 
-    </div>
+    </section>
+
   </main>
 
   <footer class="foot">
@@ -134,18 +166,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <!-- Script AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="./javascript/script.js"></script>
-
-  <script>
-    AOS.init({
-      duration: 1000
-    }
-
-    );
-  </script>
 </body>
 
 </html>

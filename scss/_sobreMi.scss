@@ -1,42 +1,88 @@
-#sobreMi{
-    margin-top: 6rem;
-
-}
 
 
-.perfil{
- display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: $a;
-
-
-.divImgPerf{
-    width: 25rem;
-    margin: $d;
-
-}
- .imgPerf{
-    width: $total;
-    border-radius: 20rem;
- }  
-
- h2{
-    font-size: $d;
- }
-}
-
-.select{
+#sobreMi {
+.mainSobreMi{
+  display: flex;
+  justify-content: center;
+  margin: 6rem;
+  div{
+    margin: $b;
+  }
+  .imgMainSobreMi{
     display: flex;
     justify-content: center;
+            .imgPerf {
+        width: 32rem;
+        border: #989898 0.3rem;
+        border-style: groove;
+    }
+  }
 
-
+    .contSobreMi{  
+        width: $medium;
+.titSobreMi{
+    margin-bottom: 5rem;
+    font-size: $d;
+    text-align: initial;
 }
-.despl1,.despl2,.despl3{
-    div{
-        margin: $b;
+
+p{
+    font-size: 1.6rem;
+    
+}
+
     }
 }
 
+.perfil {
 
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: $d;
+
+    .card {
+        margin-right:  $b;
+        margin-left:  $b;
+        width: 32rem;
+        border: #6a6a6a 0.2rem;
+        border-style: groove;
+
+        img {
+            width: $total;
+            padding: 1rem;
+        }
+
+        .card-title {
+            margin-top: 1rem;
+        }
+
+        .card-body {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        button{
+            width: 4.2rem;
+            background-color: rgb(69, 69, 69);
+
+            :hover {
+                background-color: #4c9748;
+            }
+
+            img {
+                width: $total
+
+            }
+        }
+    }
+
+}
+
+}
+
+}
 
