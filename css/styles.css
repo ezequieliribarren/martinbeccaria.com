@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset */
 /* line 2, ../PAGINAS/martinbeccaria.com/scss/_structure.scss */
 html {
@@ -12,17 +13,12 @@ html {
   box-sizing: border-box;
 }
 
-/* line 13, ../PAGINAS/martinbeccaria.com/scss/_structure.scss */
-body {
-  min-height: 100%;
-}
-
 /* line 18, ../PAGINAS/martinbeccaria.com/scss/_structure.scss */
 #cont {
   display: grid;
   grid-template-areas: "navs" "headers" "main" "foot";
   grid-template-columns: 100%;
-  grid-template-rows: 8rem 63rem auto 6rem;
+  grid-template-rows: 8rem 63rem minmax(300rem, auto) 6rem;
 }
 
 /* line 31, ../PAGINAS/martinbeccaria.com/scss/_structure.scss */
@@ -101,21 +97,27 @@ p {
   height: 3.5rem;
 }
 
-/* line 19, ../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
+/* line 18, ../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
 .navbar li :hover {
   border-bottom: solid #29bc29;
 }
 
-/* line 24, ../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
+/* line 23, ../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
 .navbar a {
   color: white;
   font-size: 1.8rem;
   font-family: 'Ramabhadra', sans-serif;
 }
 
-/* line 32, ../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
+/* line 33, ../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
 .dropdown-menu {
   background-color: #1f1f1f;
+}
+
+/* line 36, ../PAGINAS/martinbeccaria.com/scss/_navbar.scss */
+.dropdown-menu li :hover {
+  border-bottom: none;
+  width: 10rem;
 }
 
 /* line 1, ../PAGINAS/martinbeccaria.com/scss/_header.scss */
@@ -167,50 +169,57 @@ p {
   border-bottom: solid green 0.5rem;
 }
 
-/* line 4, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+/* line 1, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi {
+  margin-top: 10rem;
+  scroll-margin-top: 18em;
+}
+
+/* line 5, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
 #sobreMi .mainSobreMi {
   display: flex;
   justify-content: center;
-  margin: 6rem;
+  margin-bottom: 6rem;
 }
 
-/* line 8, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+/* line 10, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
 #sobreMi .mainSobreMi div {
   margin: 2rem;
 }
 
-/* line 11, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+/* line 14, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
 #sobreMi .mainSobreMi .imgMainSobreMi {
   display: flex;
   justify-content: center;
 }
 
-/* line 14, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+/* line 18, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
 #sobreMi .mainSobreMi .imgMainSobreMi .imgPerf {
   width: 32rem;
-  border: #989898 0.3rem;
-  border-style: groove;
 }
 
-/* line 21, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+/* line 23, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
 #sobreMi .mainSobreMi .contSobreMi {
   width: 50%;
 }
 
-/* line 23, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+/* line 26, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
 #sobreMi .mainSobreMi .contSobreMi .titSobreMi {
+  margin-top: 4rem;
   margin-bottom: 5rem;
   font-size: 4rem;
   text-align: initial;
 }
 
-/* line 29, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+/* line 33, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
 #sobreMi .mainSobreMi .contSobreMi p {
+  margin-top: 1rem;
   font-size: 1.6rem;
+  text-align: justify;
 }
 
-/* line 39, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
-#sobreMi .perfil .cards {
+/* line 44, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi .cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,45 +227,103 @@ p {
   margin-top: 4rem;
 }
 
-/* line 46, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
-#sobreMi .perfil .cards .card {
+/* line 51, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi .cards .card {
   margin-right: 2rem;
   margin-left: 2rem;
-  width: 32rem;
+  width: 33rem;
   border: #6a6a6a 0.2rem;
   border-style: groove;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-/* line 53, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
-#sobreMi .perfil .cards .card img {
+/* line 61, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi .cards .card img {
   width: 100%;
   padding: 1rem;
 }
 
-/* line 58, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
-#sobreMi .perfil .cards .card .card-title {
+/* line 66, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi .cards .card .card-title {
   margin-top: 1rem;
 }
 
-/* line 62, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
-#sobreMi .perfil .cards .card .card-body {
+/* line 71, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi .cards .card .botonCardC,
+#sobreMi .cards .card .botonCardE,
+#sobreMi .cards .card .botonCardF {
+  width: 4.5rem;
+  height: 2.5rem;
+  background-color: #454545;
+}
+
+/* line 79, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi .cards .card .contCardE,
+#sobreMi .cards .card .contCardF,
+#sobreMi .cards .card .contCardC {
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 84, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi .cards .card .contCardE li,
+#sobreMi .cards .card .contCardF li,
+#sobreMi .cards .card .contCardC li {
+  list-style-type: "✔  ";
+  font-family: 'Ramabhadra', sans-serif;
+  font-style: oblique;
+  color: white;
+  font-size: 1.4rem;
+  margin: 1.2rem 0 0 1.2rem;
+}
+
+/* line 92, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi .cards .card .contCardE p,
+#sobreMi .cards .card .contCardF p,
+#sobreMi .cards .card .contCardC p {
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: start;
+}
+
+/* line 99, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi .cards .card .on {
+  overflow: visible;
+  height: 28.5rem;
+  -webkit-transition: height 1.2s ease-in-out;
+}
+
+/* line 107, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
+#sobreMi .cards .card .off {
+  overflow: hidden;
+}
+
+/* line 1, ../PAGINAS/martinbeccaria.com/scss/_enfoques.scss */
+#enfoques {
+  margin-top: 10rem;
   display: flex;
   justify-content: center;
 }
 
-/* line 68, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
-#sobreMi .perfil .cards .card button {
-  width: 4.2rem;
-  background-color: #454545;
+/* line 6, ../PAGINAS/martinbeccaria.com/scss/_enfoques.scss */
+#enfoques .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33rem;
+  height: 20rem;
 }
 
-/* line 72, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
-#sobreMi .perfil .cards .card button :hover {
-  background-color: #4c9748;
+/* line 15, ../PAGINAS/martinbeccaria.com/scss/_enfoques.scss */
+#enfoques .imgEnf {
+  width: 8rem;
+  margin-top: 4rem;
 }
 
-/* line 76, ../PAGINAS/martinbeccaria.com/scss/_sobreMi.scss */
-#sobreMi .perfil .cards .card button img {
+/* line 18, ../PAGINAS/martinbeccaria.com/scss/_enfoques.scss */
+#enfoques .imgEnf img {
   width: 100%;
 }
 

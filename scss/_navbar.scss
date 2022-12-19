@@ -15,7 +15,6 @@
         margin-left: 1.7rem;
         height: 3.5rem;
 
-
         :hover {
             border-bottom: solid rgb(41, 188, 41);
         }
@@ -24,12 +23,21 @@
     a {
         color: white;
         font-size: 1.8rem;
-        font-family: 'Ramabhadra', sans-serif
+        font-family: 'Ramabhadra', sans-serif;
+    }
+
 
     }
-}
+
 
 .dropdown-menu{
     background-color: #1f1f1f;
+    li{
+     :hover{
+        border-bottom: none;
+        width: 10rem;
+    }    
+    }
+   
 }
 

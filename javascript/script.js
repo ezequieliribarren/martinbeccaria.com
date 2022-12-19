@@ -10,55 +10,50 @@ let contCardC = document.querySelector(".contCardC")
 botonCardF.onclick = () => {
 if (botonCardF.innerText === "▼") {
 
-contCardF.innerHTML = `<p> Soy Profesor de Educación Física recibido en el ISEF número 1 Romero Brest. Licenciado en Alto Rendimiento Deportivo en la Universidad de Lomas de Zamora (UNLZ)
-Cuento con una amplia formación en cursos relacionados a la Ciencia del Ejercicio, con aval internacional y nacional, algunos de ellos especislizados en preparacion física avanzada, fisiología deportiva, bioquímica, nutrición y suplementos.
- </p>`;
-
-
-botonCardF.innerText = "▲"
+    contCardF.classList.remove("off")       
+    contCardF.classList.add ("on")
+            
+            botonCardF.innerText = "▲"
 
 }
 
 else {
-    contCardF.innerHTML = "";
+    contCardF.classList.remove("on")
+    contCardF.classList.add ("off");
     botonCardF.innerText = "▼"
-
 }
 }
 
 botonCardE.onclick = () => {
     if (botonCardE.innerText === "▼") {
     
-    contCardE.innerHTML = `<p> Soy Profesor de Educación Física recibido en el ISEF número 1 Romero Brest. Licenciado en Alto Rendimiento Deportivo en la Universidad de Lomas de Zamora (UNLZ)
-    Cuento con una amplia formación en cursos relacionados a la Ciencia del Ejercicio, con aval internacional y nacional, algunos de ellos especislizados en preparacion física avanzada, fisiología deportiva, bioquímica, nutrición y suplementos.
-     </p>`;
-    
-    
-    botonCardE.innerText = "▲"
+        contCardE.classList.remove("off")       
+        contCardE.classList.add ("on")
+                
+                botonCardE.innerText = "▲"
     
     }
     
     else {
-        contCardE.innerHTML = "";
+        contCardE.classList.remove("on")
+        contCardE.classList.add ("off");
         botonCardE.innerText = "▼"
-    
     }
     }
 
     botonCardC.onclick = () => {
         if (botonCardC.innerText === "▼") {
-        
-        contCardC.innerHTML = `<p> Soy Profesor de Educación Física recibido en el ISEF número 1 Romero Brest. Licenciado en Alto Rendimiento Deportivo en la Universidad de Lomas de Zamora (UNLZ)
-        Cuento con una amplia formación en cursos relacionados a la Ciencia del Ejercicio, con aval internacional y nacional, algunos de ellos especislizados en preparacion física avanzada, fisiología deportiva, bioquímica, nutrición y suplementos.
-         </p>`;
-        
+
+contCardC.classList.remove("off")       
+contCardC.classList.add ("on")
         
         botonCardC.innerText = "▲"
         
         }
         
         else {
-            contCardC.innerHTML = "";
+            contCardC.classList.remove("on")
+            contCardC.classList.add ("off");
             botonCardC.innerText = "▼"
         
         }

@@ -1,88 +1,117 @@
-
-
 #sobreMi {
-.mainSobreMi{
-  display: flex;
-  justify-content: center;
-  margin: 6rem;
-  div{
-    margin: $b;
-  }
-  .imgMainSobreMi{
-    display: flex;
-    justify-content: center;
-            .imgPerf {
-        width: 32rem;
-        border: #989898 0.3rem;
-        border-style: groove;
-    }
-  }
+    margin-top: 10rem;
+    scroll-margin-top: 18em;
 
-    .contSobreMi{  
-        width: $medium;
-.titSobreMi{
-    margin-bottom: 5rem;
-    font-size: $d;
-    text-align: initial;
-}
+    .mainSobreMi {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6rem;
 
-p{
-    font-size: 1.6rem;
-    
-}
-
-    }
-}
-
-.perfil {
-
-.cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: $d;
-
-    .card {
-        margin-right:  $b;
-        margin-left:  $b;
-        width: 32rem;
-        border: #6a6a6a 0.2rem;
-        border-style: groove;
-
-        img {
-            width: $total;
-            padding: 1rem;
+        div {
+            margin: $b;
         }
 
-        .card-title {
-            margin-top: 1rem;
-        }
-
-        .card-body {
+        .imgMainSobreMi {
             display: flex;
             justify-content: center;
 
+            .imgPerf {
+                width: 32rem;
+            }
         }
 
-        button{
-            width: 4.2rem;
-            background-color: rgb(69, 69, 69);
+        .contSobreMi {
+            width: $medium;
 
-            :hover {
-                background-color: #4c9748;
+            .titSobreMi {
+                margin-top: 4rem;
+                margin-bottom: 5rem;
+                font-size: $d;
+                text-align: initial;
             }
 
-            img {
-                width: $total
+            p {
+                margin-top: 1rem;
+                font-size: 1.6rem;
+                text-align: justify;
 
             }
+
         }
     }
 
-}
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: $d;
+
+        .card {
+            margin-right: $b;
+            margin-left: $b;
+            width: 33rem;
+            border: #6a6a6a 0.2rem;
+            border-style: groove;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: $total;
+                padding: 1rem;
+            }
+
+            .card-title {
+                margin-top: 1rem;
+            }
+
+
+            .botonCardC,
+            .botonCardE,
+            .botonCardF {
+                width: 4.5rem;
+                height: 2.5rem;
+                background-color: rgb(69, 69, 69);
+            }
+
+            .contCardE,
+            .contCardF,
+            .contCardC {
+                height: 0;
+                overflow: hidden;
+                li{
+                    list-style-type:"✔  ";
+                    font-family: 'Ramabhadra', sans-serif;
+                    font-style: oblique;
+                    color: white;
+                    font-size: 1.4rem;
+                    margin: 1.2rem 0 0 1.2rem;
+                }
+                p {
+                    padding: 1rem;
+                    font-size: 1.4rem;
+                    text-align:start;
+                }
+            }
+
+            .on {
+                overflow: visible;
+                height: 28.5rem;
+                -webkit-transition: height 1.2s ease-in-out;
+                
+
+            }
+
+            .off {
+                overflow: hidden;
+            }
+
+
+
+        }
+
+    }
 
 }
-
-}
-

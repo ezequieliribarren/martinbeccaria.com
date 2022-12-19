@@ -1,0 +1,23 @@
+#enfoques{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33rem;
+        height: 20rem;
+    }
+
+
+    .imgEnf{
+width: 8rem;
+margin-top: 4rem;
+img{
+   width: $total;
+}
+    }
+
+}
