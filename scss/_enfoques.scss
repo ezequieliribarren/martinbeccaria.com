@@ -16,10 +16,8 @@
         border-style: solid;
         border-color: #4c9748;
 
-        p {
-            text-align: center;
-            padding: 3rem;
-        }
+
+
 
     }
 
@@ -42,9 +40,19 @@
         }
     }
 
-.pEnf{
-   height: 8rem;
-}
+    .pEnf {
+        height: 8rem;
+
+        p {
+            text-align: center;
+            padding: 3rem;
+        }
+
+        :hover {
+            transform: scale(1.22);
+        }
+
+    }
 
 }
 
@@ -65,7 +73,7 @@
         .enf2 {
             border-width: 0px 2px 0px 2px;
             border-style: solid;
-            border-color: green;
+            border-color: #4c9748;
         }
 
     }
