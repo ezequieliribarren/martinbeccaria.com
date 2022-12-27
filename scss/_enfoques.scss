@@ -1,23 +1,72 @@
-#enfoques{
-    margin-top: 10rem;
+#enfoques {
+    margin-top: 15rem;
+    scroll-margin-top: 25em;
     display: flex;
     justify-content: center;
 
-    .box{
+    .enf1,
+    .enf2,
+    .enf3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 33rem;
-        height: 20rem;
+        width: 36rem;
+        height: 30rem;
+        border-width: 0px 0px 0px 2px;
+        border-style: solid;
+        border-color: #4c9748;
+
+        p {
+            text-align: center;
+            padding: 3rem;
+        }
+
+    }
+
+    .enf3 {
+        border-width: 0px 2px 0px 2px;
+        border-style: solid;
+        border-color: #4c9748;
     }
 
 
-    .imgEnf{
-width: 8rem;
-margin-top: 4rem;
-img{
-   width: $total;
+    .imgEnf {
+        display: flex;
+        align-items: center;
+        width: 8rem;
+        height: 8rem;
+        margin-top: $c;
+
+        img {
+            width: $total;
+        }
+    }
+
+.pEnf{
+   height: 8rem;
 }
-    }
 
+}
+
+
+@include responsive (tablet) {
+
+    #enfoques {
+        flex-direction: column;
+        align-items: center;
+
+        .enf1,
+        .enf2,
+        .enf3 {
+            margin-top: $d;
+        }
+
+        .enf1,
+        .enf2 {
+            border-width: 0px 2px 0px 2px;
+            border-style: solid;
+            border-color: green;
+        }
+
+    }
 }
